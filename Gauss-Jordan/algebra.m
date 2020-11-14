@@ -117,8 +117,8 @@ function gaussiana_Callback(hObject, eventdata, handles)
 function jordan_Callback(hObject, eventdata, handles)
 global resp fila colum
 Datos=str2double(get(handles.nfnc,'data'));
-fila=str2double(get(handles.fila,'String'));
-colum=str2double(get(handles.columna,'String'));
+fila=str2double(get(handles.fila,'String'))
+colum=str2double(get(handles.columna,'String'))
 resp=rref(Datos);
 resul=resp(:,colum);
 x=resp(fila,colum);
@@ -152,11 +152,11 @@ function cramer_Callback(hObject, eventdata, handles)
 
 % --- Executes on button press in salir.
 function salir_Callback(hObject, eventdata, handles)
-close
 % hObject    handle to salir (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-
+close
+Main
 
 
 function fila_Callback(hObject, eventdata, handles)
